@@ -1,0 +1,16 @@
+#
+
+# SERVICE INFO
+SERVICE_NAME = 'text-embedding'
+
+# LOG
+LOG_FILEPATH = './logs'
+LOG_LEVEL = 'info'
+
+# SERVICE ADDRESS AND PORT
+SERVICE_HOST = '0.0.0.0'
+SERVICE_PORT = 5000
+SERVICE_WORKERS = 1
+
+# MODEL FILEPATH
+MODEL_FILEPATH = '/models/embedding-model/bge-m3'

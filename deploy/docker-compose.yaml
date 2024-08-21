@@ -1,0 +1,12 @@
+services:
+  embed-hub:
+    container_name: embed-hub
+    image: focus:7076/embed-hub
+    restart: always
+    pull_policy: always
+    environment:
+      MODEL_FILEPATH: '/model'
+    volumes:
+      - /ehd/hdd0/models/embedding-model/bge-m3:/model
+    ports:
+      - "8126:5000"
